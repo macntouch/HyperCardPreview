@@ -39,18 +39,7 @@ class InfoPanelController {
         
         let version: String = stack.versionAtLastModification?.description ?? "unknown"
         
-        infoView.string = "Number of Cards: \(stack.cards.count)\n" +
-            "Number of Backgrounds: \(stack.backgrounds.count)\n" +
-            "Resources: \(stack.resources != nil)\n\n" +
-            "Password: \(stack.passwordHash != nil)\n" +
-            "User Level: \(stack.userLevel.rawValue)\n" +
-            "Can't Abort: \(stack.cantAbort)\n" +
-            "Can't Delete: \(stack.cantDelete)\n" +
-            "Can't Modify: \(stack.cantModify)\n" +
-            "Can't Peek: \(stack.cantPeek)\n" +
-            "Private Access: \(stack.privateAccess)\n\n" +
-            "HyperCard Version: \(version)\n\n" +
-            "Size: \(stack.size.width) x \(stack.size.height)"
+        infoView.string = "Number of Cards: \(stack.cards.count)\n Number of Backgrounds: \(stack.backgrounds.count)\n Resources: \(stack.resources != nil)\n\n Password: \(stack.passwordHash != nil)\n User Level: \(stack.userLevel.rawValue)\n Can't Abort: \(stack.cantAbort)\n Can't Delete: \(stack.cantDelete)\n Can't Modify: \(stack.cantModify)\n Can't Peek: \(stack.cantPeek)\n Private Access: \(stack.privateAccess)\n\n HyperCard Version: \(version)\n\n Size: \(stack.size.width) x \(stack.size.height)"
     }
     
     func displayBackground(_ background: Background) {
